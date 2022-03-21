@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import './App.css';
 import Header from './components/Header';
 import Startsida from "./components/Startsida"
+import BildArray from './components/BildArray';
 
 function App() {
   /* 
@@ -20,26 +21,21 @@ function App() {
       }
   } */
 
+
+
+
+
   return (
     <div className="App">
       <BrowserRouter>
         <Header />
         <Routes>
           <Route path="/" element={<Startsida />} />
+         {/*  <Route path="/PIXX" element={<BildArray />} /> */}
         </Routes>
       </BrowserRouter>
 
 
-      {/*             <BrowserRouter>
-        <Header tasks={tasks} setTasks={setTasks} addProduct={addProduct}  />
-        <Routes>
-          <Route path="/products/:id" element={ <Product addProduct={addProduct} /> } />
-          <Route path="/" element={ <Products addProduct={addProduct} /> } />
-          <Route path="/Checkout" element={ <Checkout tasks={tasks} setTasks={setTasks} addProduct={addProduct} />} />
-        </Routes>
-
-        <Footer />
-  </BrowserRouter> */}
     </div>
   );
 }
